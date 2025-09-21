@@ -2,57 +2,85 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+/* Lecteur de Factures Maroc - Design System 
+Professional SaaS interface with Moroccan business compliance focus
 All colors MUST be HSL.
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Core Background & Foreground */
+    --background: 240 10% 98%;
+    --foreground: 230 15% 15%;
 
+    /* Card Components */
     --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card-foreground: 230 15% 15%;
 
+    /* Popover Components */
     --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover-foreground: 230 15% 15%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary Brand - Professional Blue */
+    --primary: 220 85% 50%;
+    --primary-foreground: 0 0% 100%;
+    --primary-hover: 220 85% 45%;
+    --primary-light: 220 85% 95%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Subtle Gray */
+    --secondary: 220 15% 95%;
+    --secondary-foreground: 230 15% 25%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted Elements */
+    --muted: 220 15% 96%;
+    --muted-foreground: 230 10% 50%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent - Success Green for Compliance */
+    --accent: 145 65% 50%;
+    --accent-foreground: 0 0% 100%;
+    --accent-light: 145 65% 95%;
 
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 210 40% 98%;
+    /* Status Colors */
+    --success: 145 65% 50%;
+    --success-foreground: 0 0% 100%;
+    --warning: 45 95% 55%;
+    --warning-foreground: 45 95% 15%;
+    --destructive: 0 85% 60%;
+    --destructive-foreground: 0 0% 100%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* UI Elements */
+    --border: 220 15% 90%;
+    --input: 220 15% 96%;
+    --ring: 220 85% 50%;
 
+    /* Design System Enhancements */
     --radius: 0.5rem;
+    --radius-lg: 0.75rem;
+    --radius-xl: 1rem;
 
-    --sidebar-background: 0 0% 98%;
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(220 85% 60%));
+    --gradient-accent: linear-gradient(135deg, hsl(var(--accent)), hsl(145 65% 60%));
+    --gradient-muted: linear-gradient(180deg, hsl(var(--background)), hsl(var(--muted)));
 
-    --sidebar-foreground: 240 5.3% 26.1%;
+    /* Shadows */
+    --shadow-soft: 0 2px 8px hsl(220 15% 85% / 0.3);
+    --shadow-medium: 0 4px 16px hsl(220 15% 75% / 0.25);
+    --shadow-strong: 0 8px 32px hsl(220 15% 65% / 0.2);
 
-    --sidebar-primary: 240 5.9% 10%;
+    /* Sidebar Customization */
+    --sidebar-background: 0 0% 100%;
+    --sidebar-foreground: 230 15% 25%;
+    --sidebar-primary: 220 85% 50%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 220 85% 95%;
+    --sidebar-accent-foreground: 230 15% 25%;
+    --sidebar-border: 220 15% 92%;
+    --sidebar-ring: 220 85% 50%;
 
-    --sidebar-primary-foreground: 0 0% 98%;
-
-    --sidebar-accent: 240 4.8% 95.9%;
-
-    --sidebar-accent-foreground: 240 5.9% 10%;
-
-    --sidebar-border: 220 13% 91%;
-
-    --sidebar-ring: 217.2 91.2% 59.8%;
+    /* Animation Variables */
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    --transition-bounce: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
 
   .dark {
